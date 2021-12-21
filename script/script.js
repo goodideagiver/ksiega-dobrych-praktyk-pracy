@@ -1,1 +1,0 @@
-console.log(praktyki['praktyki']['1']['tekst'])

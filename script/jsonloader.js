@@ -2,9 +2,8 @@ let praktyki = {};
 fetch("/public/praktyki.json")
     .then(response => response.json())
     .then(json => {
-        praktyki = json
-        console.log(praktyki['praktyki']['1']['tekst'])
-        return praktyki
+        Object.assign(praktyki,json)
     });
 
-    //superHeroes['members'][1]['powers'][2]
+
+console.log(praktyki)
