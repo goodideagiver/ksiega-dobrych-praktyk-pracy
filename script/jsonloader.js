@@ -5,5 +5,4 @@ fetch("/public/praktyki.json")
         Object.assign(praktyki,json)
     });
 
-
-console.log(praktyki)
+    setTimeout(() => console.log(praktyki.praktyki[1]['tekst']), 1000)
