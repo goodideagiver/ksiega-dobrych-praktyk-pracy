@@ -5,3 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.quote-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
