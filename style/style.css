@@ -51,6 +51,7 @@ main {
 .mainh h1 {
   margin-top: 5vh;
   background: linear-gradient(45deg, green, #004cff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
