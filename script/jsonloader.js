@@ -17,6 +17,10 @@ fetch("/public/praktyki.json")
         const quotwrap = document.getElementById('qwrap');
         for (let i = 0; i < Object.keys(data.praktyki).length; i++) {
             console.log(data.praktyki[i]);
-
+            let head = document.createElement("h2");
+            let quote = document.createElement("q");
+            let author = document.createElement("p");
+            let htekst = document.createTextNode("Dobra praktyka numer: ${i++}");
+            
         }
     })
