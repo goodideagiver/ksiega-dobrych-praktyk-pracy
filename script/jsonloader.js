@@ -30,8 +30,32 @@ fetch("/public/praktyki.json")
             for (let j = 0; j < el.length; j++) {
                 el[j].appendChild(te[j]);
                 divq.appendChild(el[j]);
-                divq.classList.add('quote-item');
+                divq.classList.add('quote-item','hl');
                 quotwrap.appendChild(divq);
             }
         }
+        const quotes = document.querySelectorAll('.quote-item');
+        quotes[0].classList.toggle('hl');
+        function nextQuote() {
+            if (!(quotes[quotes.length-1].classList.contains('hl'))) {
+                resetQuotes();
+                return;
+            }
+            for (let i = 0; i < quotes.length; i++) {                
+                if (!(quotes[i].classList.contains('hl'))) {                    
+                    quotes[i+1].classList.toggle('hl');
+                    quotes[i].classList.toggle('hl');
+                    break;
+                }
+            }
+        }
+
+        function resetQuotes() {
+            for (let i = 0; i < quotes.length; i++) {
+                quotes[i].classList.add('hl');
+            }
+            quotes[0].classList.toggle('hl');
+        }
+        
+        document.getElementById('next').addEventListener("click",nextQuote)
     })
