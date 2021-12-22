@@ -15,6 +15,19 @@ body {
   font-family: 'Courgette', cursive;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
+}
+
 .mainh {
   margin: auto;
   width: -webkit-fit-content;
@@ -40,6 +53,10 @@ body {
   visibility: hidden;
   -webkit-animation: slide-in 2s forwards ease-out;
           animation: slide-in 2s forwards ease-out;
+}
+
+.quote-item h2, .quote-item p {
+  padding: 0 10%;
 }
 
 .quote-item h2 {
