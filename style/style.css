@@ -45,6 +45,51 @@ main {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  overflow: hidden;
+}
+
+.mainh h1 {
+  margin-top: 5vh;
+  background: linear-gradient(45deg, green, #004cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.mainh h1::before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(255, 255, 255, 0.712)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.712), rgba(0, 0, 0, 0));
+  width: 50%;
+  height: 200%;
+  content: '';
+  overflow: hidden;
+  -webkit-animation: shine 12s infinite;
+          animation: shine 12s infinite;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
+  }
+  50%, 100% {
+    -webkit-transform: translate(200%);
+            transform: translate(200%);
+  }
+}
+
+@keyframes shine {
+  0% {
+    -webkit-transform: translate(-200%);
+            transform: translate(-200%);
+  }
+  50%, 100% {
+    -webkit-transform: translate(200%);
+            transform: translate(200%);
+  }
 }
 
 .quote-item {
