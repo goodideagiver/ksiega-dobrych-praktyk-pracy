@@ -7,7 +7,7 @@
 
 //     setTimeout(() => console.log(praktyki.praktyki[1]['tekst']), 1000)
 
-fetch("/public/praktyki.json")
+fetch("../public/praktyki.json")
     .then(function(resp) {
         return resp.json();
     })
