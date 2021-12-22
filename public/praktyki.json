@@ -2,19 +2,23 @@
     "praktyki":[
         {
             "tekst":"Zacznij się przebierać 20 min przed zakończeniem pracy żeby móc wyjść o równej",
-            "autor":"Testowy autor"
+            "autor":"Karol"
         },
         {
             "tekst":"Jak coś co zajmuje zwykle 4 godziny uda ci się zrobić w godzinę, to 3 godziny nic nie rób",
-            "autor":"Testowy autor siema"
+            "autor":"Karol"
         },
         {
-            "tekst":"Testowa praktyka 145",
-            "autor":"Autor autorski"
+            "tekst":"Jeżeli Twój szef zalega Ci z wypłatą, wynieś coś wartościowego pod zastaw",
+            "autor":"Jaksa1703"
         },
         {
-            "tekst":"Testowa praktyka 167",
-            "autor":"Siema z rana"
+            "tekst":"Prawdziwą miarą wydajności pracownika nie jest jak cięzko pracuje, tylko jak często mówi, że ciężko pracuje",
+            "autor":"Karol"
+        },
+        {
+            "tekst":"Nie rób czegoś tak dobrze żebyś był z tego zadowolony, tylko najsłabiej jak potrafisz i poprawiaj aż zaakceptują",
+            "autor":"Karol"
         }
     ]
 }
