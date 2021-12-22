@@ -30,4 +30,7 @@
         margin: auto !important;
         width: 90% !important;
     }
+    .mainh h1::before {
+        filter: blur(10px);
+    }
 }

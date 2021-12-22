@@ -28,5 +28,9 @@
     margin: auto !important;
     width: 90% !important;
   }
+  .mainh h1::before {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
 }
 /*# sourceMappingURL=500px.css.map */
