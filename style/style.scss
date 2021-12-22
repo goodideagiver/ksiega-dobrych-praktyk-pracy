@@ -6,8 +6,67 @@
     box-sizing: border-box;
 }
 
+.quote-wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+body {
+    font-family: 'Courgette', cursive;
+}
+
+.mainh {
+    margin: auto;
+    width: fit-content;
+}
+
 .quote-item {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    >* {
+        width: 100%;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        animation: slide-in 2s forwards ease-out;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    q {
+        animation-delay: 0.2s;
+        line-height: 0.5;
+        text-align: center;
+        font-size: 2rem;
+        color: green;
+        position: relative;
+        &::before,&::after {
+            font-size: 6rem;
+            opacity: 0.2;
+        }
+        &::before {
+            content: ',,';
+            top: -2rem;
+            right: -0.6rem;
+            position: relative;
+        }
+        &::after {
+            content: ',,';
+            position: relative;
+            left: .3rem;
+        }
+    }
+    p {
+        text-align: right;
+        animation-delay: .4s;
+    }
+}
+
+@keyframes slide-in {
+    0% {transform: translate(-5%);}
+    100% {transform: translate(0);
+    visibility: visible;
+    opacity: 1;
+    }
 }
