@@ -26,8 +26,12 @@ fetch("/public/praktyki.json")
             let atekst = document.createTextNode(data.praktyki[i]['autor'])
             let el = [head,quote,author]
             let te = [htekst,qtekst,atekst]
+            let divq = document.createElement("div")
             for (let j = 0; j < el.length; j++) {
-                quotwrap.appendChild(el[j].appendChild(te[j]));
+                el[j].appendChild(te[j]);
+                divq.appendChild(el[j]);
+                divq.classList.add('quote-item');
+                quotwrap.appendChild(divq);
             }
         }
     })
