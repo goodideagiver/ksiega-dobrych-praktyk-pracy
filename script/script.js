@@ -11,12 +11,13 @@ function anim() {
 
 
 const clrbl = document.querySelectorAll('.colorgrad');
+const gradwrap = document.getElementById('gradbg');
 const setBg = () => {
     // clrbl.style.backgroundColor = "#" + randomColor;
     clrbl.forEach(element => {
         const randomColor = Math.floor(Math.random()*16777215).toString(16);
         element.style.backgroundColor = "#" + randomColor;
-        const randomRotation = Math.floor(Math.random()*360);
-        element.style.transform = "rotate(" + randomRotation +"deg)";
     });
+    const randomRotation = Math.floor(Math.random()*360);
+    gradwrap.style.transform = "rotate(" + randomRotation +"deg)";
   }

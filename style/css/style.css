@@ -21,19 +21,25 @@
 
 body {
   font-family: 'Courgette', cursive;
+  overflow: hidden;
 }
 
 .colorgrad {
   position: fixed;
   opacity: .5;
   background-color: white;
-  width: 500px;
-  height: 50vh;
-  -webkit-transition: 3s;
-  transition: 3s;
+  width: 150vw;
+  height: 150vh;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-filter: blur(3500px) brightness(1.5);
           filter: blur(3500px) brightness(1.5);
   z-index: 1;
+}
+
+#gradbg {
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 main {
@@ -119,6 +125,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 20px;
+  text-shadow: white 2px 2px, rgba(0, 0, 0, 0.198) -3px -3px 5px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transition-delay: .5s;
