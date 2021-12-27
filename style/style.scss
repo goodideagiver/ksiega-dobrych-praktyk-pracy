@@ -56,17 +56,17 @@ main {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;
-        &::before {
-            top: 0;
-            left: 0;
-            position: absolute;
-            background: linear-gradient(to right,rgba(0, 0, 0, 0),rgba(255, 255, 255, 0.712),rgba(0, 0, 0, 0));
-            width: 50%;
-            height: 200%;
-            content: '';
-            overflow: hidden;
-            animation: shine 12s infinite;
-        }
+        // &::before {
+        //     top: 0;
+        //     left: 0;
+        //     position: absolute;
+        //     background: linear-gradient(to right,rgba(0, 0, 0, 0),rgba(255, 255, 255, 0.712),rgba(0, 0, 0, 0));
+        //     width: 50%;
+        //     height: 200%;
+        //     content: '';
+        //     overflow: hidden;
+        //     //animation: shine 12s infinite;
+        // }
     }
 }
 

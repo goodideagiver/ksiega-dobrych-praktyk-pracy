@@ -19,6 +19,7 @@
 body {
   font-family: 'Courgette', cursive;
   overflow: hidden;
+  height: 100vh;
 }
 
 .colorgrad {
